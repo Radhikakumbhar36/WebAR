@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web AR Project</title>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Add a marker for the AR experience -->
+        <a-marker preset="hiro">
+            <!-- Add a 3D cube as the AR overlay -->
+            <a-box position="0 0.5 0" material="color: red;"></a-box>
+        </a-marker>
+        <!-- Add a camera to the scene for viewing the AR experience -->
+        <a-camera-static></a-camera-static>
+    </a-scene>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+</body>
+</html>
